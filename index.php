@@ -12,16 +12,50 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="d-flex justify-content-between align-items-center p-3">
+    <header class="navbar">
         <h1 id="logo"><?php echo $nomeSistema; ?></h1>
         <nav>
             <ul class="nav">
-            <li class="nav-item">Cursos</li>
-            <li class="nav-item">Login</li>
-            <li class="nav-item">Cadastrar</li>
+            <li class="nav-item"><a href="#" class="nav-link">Cursos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Cadastrar</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <section class="container mt-4">
+            <div class="row justify-content-around">
+                <div class="col-lg-3 card text-center">               
+                    <h2>Curso HTML</h2>
+                    <img src="img/html.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">R$15,00</h5>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 card text-center">               
+                    <h2>Curso CSS</h2>
+                    <img src="img/css.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">R$35,00</h5>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 card text-center">               
+                    <h2>Curso JavaScript</h2>
+                    <img src="img/js.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">R$85,00</h5>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+
+
+
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- <?php
         $nome = "Bee"; 
