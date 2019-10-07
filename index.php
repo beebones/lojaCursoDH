@@ -1,13 +1,4 @@
-<?php
-    $nomeSistema = "Cursos da Bee";
-    $usuario = ["nome"=>"BeeBones"];
-    $produtos = [
-        ["nome"=>"Curso Javascript", "preco"=>"1.200.00", "duracao"=>"5 meses", "img"=>"img/js.png"],
-        ["nome"=>"Curso HTML", "preco"=>"400.00", "duracao"=>"3 meses", "img"=>"img/html.png"],
-    ];
-    $categorias = ["Cursos", "Palestras", "Artigos"];
-?>
-
+<?php include_once("config/variaveis.php")?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,35 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <h1 id="logo"><?php echo $nomeSistema; ?></h1>
-            <nav>
-                <ul class="nav">
-                <?php if(isset($usuario) && $usuario != "") {?>            
-                    <li class="nav-item"><a href="#" class="nav-link">Cursos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Olá <?php echo $usuario["nome"]; ?></a></li>                
-                <?php } else { ?>
-                    <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Cadastrar</a></li>
-                <?php } ?>
-                </ul>
-            </nav>
-        </div>
-        <!-- categorias -->
-        <nav class="navbar bg-dark">
-            <ul class="nav">
-                <?php if(isset($categorias) && $categorias != []){ ?>
-                    <?php foreach($categorias as $categoria){ ?>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#"><?php echo $categoria; ?></a>
-                        </li>
-                    <?php } ?>
-                <?php } ?>
-            </ul>
-        </nav>
-    </header>
-        
+    <?php require_once("header.php");?>      
     <main>
         <section class="container mt-4">
             <div class="row justify-content-around">
