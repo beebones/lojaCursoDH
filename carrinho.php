@@ -1,8 +1,3 @@
-<?php
-    $nomeSistema = "Cursos da Bee";
-    $usuario = ["nome"=>"BeeBones"];
-    $categorias = ["Cursos", "Palestras", "Artigos"];
-?>
 
 <!DOCTYPE html>
 <html lang="en">
