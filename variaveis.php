@@ -1,6 +1,7 @@
 <?php
+session_start();
     $nomeSistema = "Cursos da Bee";
-    $usuario = ["nome"=>"BeeBones"];
+    $usuario = isset($_SESSION['usuario'])? $_SESSION['usuario']:"";
     $nomeArquivo = "produto.json";
     $produtos = json_decode(file_get_contents($nomeArquivo), true);
 
