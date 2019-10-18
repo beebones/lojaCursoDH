@@ -1,4 +1,4 @@
-<?php include_once("variaveis.php"); ?>
+<?php include_once("config/variaveis.php"); ?>
 
 <header>
         <div class="navbar">
@@ -7,9 +7,10 @@
                 <ul class="nav">
                 <?php if(isset($usuario) && $usuario != "") {?>            
                     <li class="nav-item"><a href="#" class="nav-link">Cursos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Olá <?php echo $usuario["nome"]; ?></a></li>                
+                    <li class="nav-item"><a href="#" class="nav-link">Olá <?php echo $usuario["nome"]; ?></a></li>
+                    <li class="nav-item"><a href="sair.php" class="nav-link"> Sair </a></li>                                
                 <?php } else { ?>
-                    <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+                    <li class="nav-item"><a href="login.php" class="nav-link">Login</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Cadastrar</a></li>
                 <?php } ?>
                 </ul>

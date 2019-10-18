@@ -2,7 +2,7 @@
 session_start();
     $nomeSistema = "Cursos da Bee";
     $usuario = isset($_SESSION['usuario'])? $_SESSION['usuario']:"";
-    $nomeArquivo = "produto.json";
+    $nomeArquivo = __DIR__."/../produto.json";
     $produtos = json_decode(file_get_contents($nomeArquivo), true);
 
     // $produtos = [
